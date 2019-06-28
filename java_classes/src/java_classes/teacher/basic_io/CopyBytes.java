@@ -10,8 +10,8 @@ public class CopyBytes {
         FileOutputStream out = null;
 
         try {
-            in = new FileInputStream("xanadu.txt");
-            out = new FileOutputStream("outagain.txt");
+            in = new FileInputStream("/Users/ganrqunx/Temp/xanadu.txt");
+            out = new FileOutputStream("/Users/ganrqunx/Temp/outagain.txt");
             int c;
 
             while ((c = in.read()) != -1) {

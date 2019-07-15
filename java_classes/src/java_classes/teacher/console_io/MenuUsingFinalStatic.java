@@ -2,7 +2,7 @@ package java_classes.teacher.console_io;
 
 import java.io.Console;
 
-public class Menu {
+public class MenuUsingFinalStatic {
 
 	private String[] items = { "歡迎使用溫度轉換器:", "1. 華氏轉攝氏", "2. 攝氏轉華氏", "0. 離開" };
 	public static final int ANS_0_EXIT = 0;
@@ -30,7 +30,7 @@ public class Menu {
 
 	public static void main(String[] args) {
 
-		Menu menu = new Menu();
+		MenuUsingFinalStatic menu = new MenuUsingFinalStatic();
 		int result = menu.show();
 		System.out.println("result is "+result);
 	}

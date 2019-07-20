@@ -1,0 +1,18 @@
+@startuml 
+start
+
+repeat
+	:提示選單（輸入整數或X回上層);
+	if (輸入x or X) then
+		break
+	endif	
+	if (整數格式?) then
+		:計算攝氏度數;
+		:印出結果;
+	else
+		:提示格式錯誤，請重輸;
+	endif
+repeat while (繼續?) is (yes)
+->no;
+stop
+@enduml 

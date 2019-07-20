@@ -26,7 +26,9 @@ public class Temperature {
 		
 		double fahrenheit = celsiusToFahrenheit(celsius);
 		
-		console.println(fmt, args);
+		console.println("對應華氏溫度為：%.2f", fahrenheit);
+		
+		console.close();
 	}
 
 }

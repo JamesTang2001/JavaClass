@@ -18,10 +18,12 @@ public class NConsole {
 
 		return this;
 	}
+
 	public NConsole printf(String fmt, Object... args) {
 
 		return format(fmt, args);
 	}
+
 	public NConsole println(String fmt, Object... args) {
 
 //		System.out.printf(fmt, args);
@@ -39,6 +41,7 @@ public class NConsole {
 		return line;
 
 	}
+
 	public String readLine(String fmt, Object... args) throws IOException {
 
 		System.out.printf(fmt, args);
@@ -50,6 +53,11 @@ public class NConsole {
 
 	}
 
+	public void close() throws IOException {
+
+		bufferedReader.close();
+	}
+
 	public static void main(String[] args) throws IOException {
 
 		NConsole console = new NConsole();
@@ -59,5 +67,7 @@ public class NConsole {
 		String something = console.readLine("Say something...");
 
 		console.println("That something is:**%s**", something);
+		
+		console.close();
 	}
 }

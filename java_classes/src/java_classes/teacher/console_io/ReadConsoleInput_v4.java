@@ -35,8 +35,8 @@ public class ReadConsoleInput_v4 {
 					formatOK = true;
 				} catch (NumberFormatException e) {
 					console.println("格式錯誤，請重輸...");
+					continue;
 				}
-				formatOK = true;
 			} while (!formatOK);
 
 			double r = Math.sqrt(id);

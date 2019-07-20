@@ -1,0 +1,23 @@
+@startuml
+
+start
+:提示請輸入姓名;
+:接收使用者輸入;
+:go=true;
+repeat
+	:提示請輸入整數, 按X離開;
+	:接收輸入;
+	if (輸入為x, X) then (yes)
+		break
+	endif
+	if (輸入值為整數) then (yes)
+		:計算平方根;
+		:列印結果;
+	else
+		:提示請輸入整數格式;
+	endif
+repeat while (go?) is (yes)
+->no;
+stop
+
+@enduml

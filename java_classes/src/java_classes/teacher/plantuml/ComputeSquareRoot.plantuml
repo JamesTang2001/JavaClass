@@ -1,0 +1,20 @@
+
+@startuml 
+start 
+repeat 
+	:顯示選單;
+	:得到使用者選項;
+	if (選攝氏轉華氏) then (yes)
+		:攝氏轉華氏;
+		
+	elseif (選華氏轉攝氏) then (yes)
+		:攝氏轉華氏;
+	elseif (離開) then (yes) 
+		break
+		
+	endif
+
+repeat while(continue) is (yes)
+->no;
+end
+@enduml 

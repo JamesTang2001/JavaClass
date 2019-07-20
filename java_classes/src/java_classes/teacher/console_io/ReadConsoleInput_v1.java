@@ -3,8 +3,13 @@ package java_classes.teacher.console_io;
 import java.io.IOException;
 
 //import java.io.Console;
+/*
+ * 本程式有兩個問題
+ * 1. 資料輸入錯誤沒有檢核
+ * 2. 只能作一次
+ */
 
-public class ReadConsoleInput {
+public class ReadConsoleInput_v1 {
 
 	public static void main(String[] args) throws IOException {
 
@@ -21,8 +26,9 @@ public class ReadConsoleInput {
 		
 		double r = Math.sqrt(id);
 
-		System.out.format("嗨， %s， %d 的平方根是： %.4f.%n",name, id, r);//％n是斷行符號，依各平台自訂
+		console.println("嗨， %s， %d 的平方根是： %.4f.%n",name, id, r);//％n是斷行符號，依各平台自訂
 
+		console.close();
 	}
 
 }

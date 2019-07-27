@@ -9,6 +9,7 @@ import java.io.IOException;
  * 2. 只能作一次
  * 
  * 先處理資料輸入檢核
+ * 修正只能輸入正整數
  */
 
 public class ReadConsoleInput_v4 {
@@ -32,6 +33,10 @@ public class ReadConsoleInput_v4 {
 						break outerloop;
 					}
 					id = Integer.valueOf(ans);
+					if(id < 0) {
+						console.println("請輸入正整數!!");
+						continue;
+					}
 					formatOK = true;
 				} catch (NumberFormatException e) {
 					console.println("格式錯誤，請重輸...");

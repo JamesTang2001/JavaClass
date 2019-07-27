@@ -3,7 +3,7 @@ package java_classes.teacher.head_first.ch12_swing;
 //記得import javax.swing.*
 import javax.swing.*;
 
-public class SimpleGUI_UseMyDrawPanel {
+public class SimpleGUI_UseMyPanel {
 
 	public static void main(String[] args) {
 
@@ -11,7 +11,9 @@ public class SimpleGUI_UseMyDrawPanel {
 		JFrame frame = new JFrame();
 //		JButton button = new JButton("Click Me!!");
 		
-		MyDrawPanel panel = new MyDrawPanel();
+		MyPanelDrawingRectangle panel = new MyPanelDrawingRectangle();
+//		MyPanelShowJPG panel = new MyPanelShowJPG();
+//		MyPanelRandomColor panel = new MyPanelRandomColor();
 		//設定jframe關閉行為
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		

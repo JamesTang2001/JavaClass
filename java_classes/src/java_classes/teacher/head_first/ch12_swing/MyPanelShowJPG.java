@@ -6,7 +6,7 @@ public class MyPanelShowJPG extends JPanel {
 	
 	public void paintComponent(Graphics g) {
 		
-		Image image = new ImageIcon("/home/ganrqunx/temp/sample.JPG").getImage();
+		Image image = new ImageIcon("/Users/ganrqunx/Dropbox/Public/sample.JPG").getImage();
 		
 		g.drawImage(image, 3, 4, this);
 	}

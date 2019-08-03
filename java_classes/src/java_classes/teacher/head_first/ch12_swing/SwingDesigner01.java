@@ -9,6 +9,7 @@ import javax.swing.JPanel;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JLabel;
+import net.miginfocom.swing.MigLayout;
 
 public class SwingDesigner01 {
 
@@ -49,5 +50,6 @@ public class SwingDesigner01 {
 		JPanel panel = new JPanel();
 		panel.setBounds(28, 47, 395, 222);
 		frame.getContentPane().add(panel);
+		panel.setLayout(null);
 	}
 }

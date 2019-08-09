@@ -7,5 +7,6 @@ public class PrintSquareRoot {
 		double r = Math.sqrt(i);
 
 		System.out.format("Hi, %s, the square root of %d is %.4f.%n",name, i, r);//％n是斷行符號，依各平台自訂
+		
 	}
 }

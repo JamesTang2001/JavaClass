@@ -8,8 +8,8 @@ public class CopyMoreBytes {
         FileOutputStream out = null;
 
         try {
-            in = new FileInputStream("/Users/ganrqunx/temp/xanadu.txt");
-            out = new FileOutputStream("/Users/ganrqunx/temp/outagain.txt");
+            in = new FileInputStream("/Users/jamestang/temp/xanadu.txt");
+            out = new FileOutputStream("/Users/jamestang/temp/outagain.txt");
             int c;
 
             byte[] bytes = new byte[10];
